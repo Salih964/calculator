@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>BMI</h1>
+    <form action="" method="post">
+        {%csrf_token%}
+
+       <div>
+        <label for="">enter weight </label>
+        <input type="text" placeholder="weight in kg" name="wbox">
+       </div>
+
+        <div>
+            <label for="">enter height </label>
+            <input type="text" placeholder="height in cm" name="hbox">
+        </div>
+
+        <button type="submit">BMI</button>
+            
+            output={{data}}
+    </form>
+</body>
+</html>
